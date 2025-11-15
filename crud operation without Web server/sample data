@@ -1,0 +1,9 @@
+mysql> select * from product;
++----+---------+-------+
+| id | price   | name  |
++----+---------+-------+
+|  1 | 2000.65 | Watch |
++----+---------+-------+
+1 row in set (0.03 sec)
+
+mysql>
