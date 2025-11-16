@@ -1,0 +1,76 @@
+http://localhost:8080/customer/add
+
+request :
+{
+    "customer_age":23,
+    "customer_address":"chennai",
+    "customer_gender":"Male",
+    "customer_name":"G sathish"
+}
+response:
+{
+    "customer_id": 1,
+    "customer_name": "G sathish",
+    "customer_age": 23,
+    "customer_gender": "Male",
+    "customer_address": "chennai"
+}
+
+http://localhost:8080/customer/update
+
+request:
+
+
+{
+    "customer_id": 1,
+    "customer_name": "sathish",
+    "customer_age": 24,
+    "customer_gender": "Male",
+    "customer_address": "chennai"
+}
+
+
+response:
+
+{
+    "customer_id": 1,
+    "customer_name": "sathish",
+    "customer_age": 24,
+    "customer_gender": "Male",
+    "customer_address": "chennai"
+}
+
+
+http://localhost:8080/customer/getall
+
+[
+    {
+        "customer_id": 1,
+        "customer_name": "sathish",
+        "customer_age": 24,
+        "customer_gender": "Male",
+        "customer_address": "chennai"
+    },
+    {
+        "customer_id": 2,
+        "customer_name": "G sathish",
+        "customer_age": 23,
+        "customer_gender": "Male",
+        "customer_address": "chennai"
+    }
+]
+
+
+http://localhost:8080/customer/getCustomer/1
+
+{
+    "customer_id": 1,
+    "customer_name": "sathish",
+    "customer_age": 24,
+    "customer_gender": "Male",
+    "customer_address": "chennai"
+}
+
+http://localhost:8080/customer/deleteCustomer/2
+
+success
